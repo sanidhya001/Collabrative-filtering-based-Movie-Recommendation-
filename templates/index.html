@@ -1,0 +1,76 @@
+<!Doctype>
+<html>
+   <head>
+   <title>This is my movie recommendation System</title>
+   <link rel="shortcut icon" type="image/jpg" href="./static/favicon.png"/>
+   <style>
+   .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: tomato;
+        color: white;
+        text-align: center;
+          }
+     body {
+        background-image: url("./static/image.jpg");
+        background-repeat: no-repeat;
+        background-color: #cccccc;
+        font-family: "Poppins", sans-serif;
+         font-weight: 300;
+        font-size: 200%;
+        line-height: 1.5;
+          }
+    .movie{ 
+        height: 70vh;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        margin-right: 5vh;
+        margin-left: 5vh;
+        padding: 1em;
+        width: auto;
+        text-align: center;
+        }
+    #submission_button{
+        width: 25%;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 5px;
+        color: white;
+        background-color:dodgerblue;
+        border-style: none;
+      }
+    #movie_name{
+        width: 70%;
+        padding: 1em;
+        border-radius: 5px;
+        text-align: center;
+        border: 1px solid grey;
+    }
+    #name{
+        width: 70%;
+        padding: 1em;
+        border-radius: 5px;
+        text-align: center;
+        border: 1px solid grey;
+    }  
+    </style>
+</head>
+<body background>
+       <div class="movie">
+       
+        <h2 style="color:tomato;"><u>Movie Recommendation System</u></h2>
+        <form action="{{ url_for('main') }}" method="POST">
+            <input type="text" id="movie_name" name="movie_name" placeholder="Enter a full movie name" required >
+            <br>
+            <br>
+            <input type="submit" id="submission_button" value="Submit"/>
+        </form>
+  </div>
+   <div class="footer">
+   <p style="font-size:20px">Made By Sanidhya Verma</p>
+   </div>
+
+</body>
+</html>

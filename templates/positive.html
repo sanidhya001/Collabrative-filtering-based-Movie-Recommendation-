@@ -1,0 +1,72 @@
+<!Doctype html>
+<html>
+<head>
+<title>Recommendations</title>
+<link rel="shortcut icon" type="image/jpg" href="./static/favicon.png"/>
+<style>
+
+ body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+    background-color: #ffffff;
+     background-image: url("./static/image1.jpeg");
+     background-attachment:fixed;
+  line-height: 1.5;
+  color: #000;
+}
+   .movie{
+        height: 70vh;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        margin-right: 5vh;
+        margin-left: 5vh;
+        border-radius: 20px;
+        padding: 1em;
+        width: auto;
+        box-shadow: 0px -10px 20px -5px #E2E2E2;
+        text-align: center;
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: tomato;
+        color: white;
+        text-align: center;
+          }
+</style>
+</head>
+<body>
+<div class="movie">
+        <h2><u><b>Recommendations:<b></u></h2>
+        <p>Showing results for: {{ search_name }}</p>
+        <table class="movie_table" align="center" border="2" color="white">
+            <tr>
+                <th>Movie Title</th>
+            </tr>
+            <tbody class="table_body">
+                <tr>
+                    <td>{{ movie_names[1] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[2] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[3] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[4] }}</td>
+                   
+                </tr>
+                <tr>
+                    <td>{{ movie_names[5] }}</td>
+                </tr>
+            </tbody>
+        </table>
+    <div class="footer">
+   <p>Made By Sanidhya Verma</p>
+   </div>
+</body>
+</html>
